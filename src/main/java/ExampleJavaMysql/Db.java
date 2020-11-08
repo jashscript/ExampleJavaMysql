@@ -22,14 +22,14 @@ public class Db {
             if (rs != null) {
                 try {
                     rs.close();
-                } catch (SQLException sqlEx) { }
+                } catch (SQLException sqlEx) { // it's not numeric; that's fine, just continue }
                 rs = null;
             }
 
             if (smtp != null) {
                 try {
                     smtp.close();
-                } catch (SQLException sqlEx) { }
+                } catch (SQLException sqlEx) { // it's not numeric; that's fine, just continue }
                 smtp = null;
             }
         }
